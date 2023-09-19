@@ -1,4 +1,3 @@
-
 # Boas vindas ao repositório do projeto All For One
 
 Para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
@@ -19,6 +18,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
   <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
 
 Hoje você fará um projeto com o codinome _All For One_ em que praticará todos os conceitos de SQL já ensinados até aqui. Porém, você vai usar um banco de dados totalmente diferente, então dê tchau para o `sakila` e dê boas vindas ao `Northwind`, que será usado neste projeto. As instruções de como restaurar o banco podem ser lidas a seguir.
+
 </details>
 
 <details>
@@ -49,6 +49,7 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
 Lembre-se no conteúdo há uma [Cheat Sheet](https://github.com/tryber/Trybe-CheatSheets/blob/master/backend/mysql/simple-crud.md) que pode te ajudar a relembrar dos comandos e sua utilização.
 
 Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/fc998c60-386e-46bc-83ca-4269beb17e17/section/fe827a71-3222-4b4d-a66f-ed98e09961af/day/35e03d5e-6341-4a8c-84d1-b4308b2887ef/lesson/573db55d-f451-455d-bdb5-66545668f436) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
+
  </details>
 
 <details>
@@ -68,9 +69,9 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ## Com Docker
 
-  **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.**
+**:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.**
 
-  > :information_source: Rode os serviços `node` e `db` com o comando `docker-compose up -d`.
+> :information_source: Rode os serviços `node` e `db` com o comando `docker-compose up -d`.
 
 - Lembre-se de parar o `mysql` se estiver usando localmente na porta padrão (`3306`), ou adapte, caso queria fazer uso da aplicação em containers
 - Esses serviços irão inicializar um container chamado `all_for_one` e outro chamado `all_for_one_db`.
@@ -93,7 +94,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ## Sem Docker
 
-  > :information_source: Instale as dependências [**Caso existam**] com `npm install`
+> :information_source: Instale as dependências [**Caso existam**] com `npm install`
 
 - **:warning: Atenção:** Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
 
@@ -184,7 +185,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 <details>
   <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
 
-  Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
+Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
 
 - Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
 
@@ -201,7 +202,7 @@ Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362
 <details>
   <summary><strong>🕵🏿 Revisando um pull request</strong></summary><br />
 
-  Use o conteúdo sobre [Code Review](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/f04cdb21-382e-4588-8950-3b1a29afd2dd/section/b3af2f05-08e5-4b4a-9667-6f5f729c351d/lesson/36268865-fc46-40c7-92bf-cbded9af9006) para te ajudar a revisar os _Pull Requests_.
+Use o conteúdo sobre [Code Review](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/f04cdb21-382e-4588-8950-3b1a29afd2dd/section/b3af2f05-08e5-4b4a-9667-6f5f729c351d/lesson/36268865-fc46-40c7-92bf-cbded9af9006) para te ajudar a revisar os _Pull Requests_.
 
 </details>
 
@@ -218,15 +219,18 @@ Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362
 
 5. Selecione todo o código com o atalho `CTRL-A` e depois clique no ícone de raio para executar a query.
 
-    ![Restaurando o banco Northwind](images/restore_northwind.png)
+   ![Restaurando o banco Northwind](images/restore_northwind.png)
+
 6. Aguarde alguns segundos (espere em torno de 30 segundos antes de tentar fazer algo).
 
 7. Clique no botão apontado na imagem a seguir para atualizar a listagem de banco de dados.
 
-    ![Tabelas do banco Northwind](images/refresh_databases.png)
+   ![Tabelas do banco Northwind](images/refresh_databases.png)
+
 8. Verifique se o banco restaurado possui todas as seguintes tabelas:
 
-    ![Tabelas do banco Northwind](images/northwind.png)
+   ![Tabelas do banco Northwind](images/northwind.png)
+
 9. Clique com botão direito em cada tabela e selecione "Select Rows" e certifique-se que todas as tabelas possuem registros. Caso tenha alguma faltando, faça o passo a seguir. Caso contrário, pode ir para próxima seção.
 
 10. Caso existam tabelas faltando, drope o banco de dados clicando com o botão direito em cima do banco de dados northwind e selecionando "Drop Schema" e refaça os passos novamente, dessa vez aguardando um tempo maior quando executar o script de restauração.
@@ -246,7 +250,7 @@ Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362
 npm test
 ```
 
-### Para executar os testes locais usando apenas um container MySQL 
+### Para executar os testes locais usando apenas um container MySQL
 
 - Para executar localmente os testes é preciso criar um container MySQL:
 
@@ -264,11 +268,11 @@ MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost npm test
 
 Caso queria rodar um teste específico, basta acrescentar ao final do comando:
 
-  ```sh
-   -- -t <NOME_DO_TESTE>
-  ```
+```sh
+ -- -t <NOME_DO_TESTE>
+```
 
-  Aonde `<NOME_DO_TESTE>` pode ser apenas um trecho do describe do teste.
+Aonde `<NOME_DO_TESTE>` pode ser apenas um trecho do describe do teste.
 
 - Por exemplo, para rodar com o docker-compose o teste do requisito 1:
 
@@ -276,7 +280,7 @@ Caso queria rodar um teste específico, basta acrescentar ao final do comando:
   npm test -- -t req01
   ```
 
-- **:warning: Atenção:** O avaliador espera que a versão do  MySQL seja a 5.7. Em caso de erro nos testes, verifique se essa é a versão que está sendo usada por você.
+- **:warning: Atenção:** O avaliador espera que a versão do MySQL seja a 5.7. Em caso de erro nos testes, verifique se essa é a versão que está sendo usada por você.
 
 </details>
 
@@ -295,18 +299,18 @@ Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência 
 <details>
      <summary><strong>🗂 Compartilhe seu portfólio!</strong></summary>
 
-  Agora que você finalizou os requisitos, chegou a hora de mostrar ao mundo que você aprendeu algo novo! 🚀
+Agora que você finalizou os requisitos, chegou a hora de mostrar ao mundo que você aprendeu algo novo! 🚀
 
-  Siga esse [**guia que preparamos com carinho**](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/a3cac6d2-5060-445d-81f4-ea33451d8ea4/section/d4f5e97a-ca66-4e28-945d-9dd5c4282085/day/eff12025-1627-42c6-953d-238e9222c8ff/lesson/49cb103b-9e08-4ad5-af17-d423a624285a) para disponibilizar o projeto finalizado no seu GitHub pessoal.
+Siga esse [**guia que preparamos com carinho**](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/a3cac6d2-5060-445d-81f4-ea33451d8ea4/section/d4f5e97a-ca66-4e28-945d-9dd5c4282085/day/eff12025-1627-42c6-953d-238e9222c8ff/lesson/49cb103b-9e08-4ad5-af17-d423a624285a) para disponibilizar o projeto finalizado no seu GitHub pessoal.
 
-  Esse passo é super importante para ganhar mais visibilidade no mercado de trabalho, mas também é útil para manter um back-up do seu trabalho.
+Esse passo é super importante para ganhar mais visibilidade no mercado de trabalho, mas também é útil para manter um back-up do seu trabalho.
 
-  E você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
+E você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
 
   <br />
  </details>
 
-  ---
+---
 
 # Requisitos do projeto
 
@@ -314,30 +318,29 @@ Monte queries para encontrar as informações esperadas pelos desafios.
 
 - **:warning: Atenção:** Não é necessário colocar `USE northwind` ou `SET SQL_SAFE_UPDATES = 0;` no início dos seus arquivos
 
-- **:warning: Atenção:** Os testes são executados em uma cópia do banco de dados, o `northwind_tests`. Por isto as _querys_  devem indicar somente o nome da tabela, e não utilizar o formato `db.table`.
+- **:warning: Atenção:** Os testes são executados em uma cópia do banco de dados, o `northwind_tests`. Por isto as _querys_ devem indicar somente o nome da tabela, e não utilizar o formato `db.table`.
 
 - Exemplo de query `correta`: SELECT product_name FROM products;
 
 - Exemplo de query `incorreta`: SELECT product_name FROM northwind.products;
 
-
 ## Desafios Iniciais
 
 1 - Exiba apenas os nomes dos produtos na tabela `products`.
 
-  ---
+---
 
 2 - Exiba os dados de todas as colunas da tabela `products`.
 
-  ---
+---
 
 3 - Escreva uma query que exiba os valores da coluna que representa a _primary key_ da tabela `products`.
 
-  ---
+---
 
 4 - Conte quantos registros existem na coluna `product_name` da tabela `products`.
 
-  ---
+---
 
 5 - Monte uma query que exiba os dados da tabela `products` a partir do quarto registro até o décimo terceiro.
 
@@ -352,15 +355,15 @@ Monte queries para encontrar as informações esperadas pelos desafios.
 
 </details>
 
-  ---
+---
 
 6 - Exiba os dados das colunas `product_name` e `id` da tabela `products` de maneira que os resultados estejam em ordem alfabética dos nomes.
 
-  ---
+---
 
 7 - Mostre apenas os ids dos 5 últimos registros da tabela `products` (a ordenação deve ser baseada na coluna `id`).
 
-  ---
+---
 
 8 - Faça uma consulta na tabela `employees` que retorne o nome completo da pessoa colaboradora (colunas `first_name` e `last_name`) com o nome `full_name` e também a localização completa (colunas `city`, `state_province` e `address`) com o nome `location`.
 
@@ -373,9 +376,9 @@ Monte queries para encontrar as informações esperadas pelos desafios.
 
 - A concatenação de `city` e `state_province` deve ser separada por um hífen, e a coluna `address` deve ser separada por uma vírgula e um espaço. Exemplo:
 
-    ```text
-      "Seatle-WA, 123 1st Avenue"
-    ```
+  ```text
+    "Seatle-WA, 123 1st Avenue"
+  ```
 
   <br />
 
@@ -385,55 +388,55 @@ Monte queries para encontrar as informações esperadas pelos desafios.
 
 9 - Mostre todos os valores de `notes` da tabela `purchase_orders` que não são nulos.
 
-  ---
+---
 
 10 - Mostre todos os dados da tabela `purchase_orders` em ordem decrescente, ordenados por `created_by` em que o `created_by` é maior ou igual a 3.
 
 - Ordene também os resultados pelo `id` de forma crescente, como critério de desempate para a ordenação.
 
-  ---
+  ***
 
 11 - Exiba os dados da coluna `notes` da tabela `purchase_orders` em que seu valor de `Purchase generated based on Order` é maior ou igual a 30 e menor ou igual a 39.
 
 - ✨ Dica: `Purchase generated based on Order` é um valor atribuído à coluna `notes` e não uma coluna.
 
-  ---
+  ***
 
 12 - Mostre as `submitted_date` de `purchase_orders` em que a `submitted_date` é do dia 26 de abril de 2006.
 
-  ---
+---
 
 13 - Mostre o `supplier_id` das `purchase_orders` em que o `supplier_id` seja 1 ou 3.
 
-  ---
+---
 
 14 - Mostre os resultados da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` seja maior ou igual a 1 e menor ou igual 3.
 
-  ---
+---
 
 15 - Mostre somente as horas (sem os minutos e os segundos) da coluna `submitted_date` de todos registros da tabela `purchase_orders`.
 
 - No resultado, a hora extraída da coluna `submitted_date` deve ser chamada de `submitted_hour`.
 
-  ---
+  ***
 
 16 - Exiba a `submitted_date` das `purchase_orders` que estão entre `2006-01-26 00:00:00` e `2006-03-31 23:59:59`.
 
-  ---
+---
 
 17 - Mostre os registros das colunas `id` e `supplier_id` das `purchase_orders` em que os `supplier_id` sejam tanto 1, ou 3, ou 5, ou 7.
 
-  ---
+---
 
 18 - Mostre todos os registros de `purchase_orders` que tem o `supplier_id` igual a 3 e `status_id` igual a 2.
 
-  ---
+---
 
 19 - Mostre a quantidade de pedidos que foram feitos na tabela `orders` pelo `employee_id` igual a 5 ou 6, e que foram enviados através do método(coluna) `shipper_id` igual a 2.
 
 - No resultado, a coluna que contém a contagem de pedidos deve ser chamada de `orders_count`.
 
-  ---
+  ***
 
 ## Desafios de manipulação de tabelas
 
@@ -441,7 +444,7 @@ Monte queries para encontrar as informações esperadas pelos desafios.
 
 - ✨ Dica: O `id` deve ser incrementado automaticamente. Para entender melhor isso, você pode consultar o arquivo de criação da tabela (./northwind.sql, na linha 439) [aqui](northwind.sql).
 
-  ---
+  ***
 
 21 - Adicione com um único `INSERT`, duas linhas à tabela `order_details` com os mesmos dados do requisito 20.
 
@@ -456,33 +459,33 @@ Monte queries para encontrar as informações esperadas pelos desafios.
 
 </details>
 
-  ---
+---
 
 22 - Atualize todos os dados da coluna `discount`, na tabela `order_details`, para 15.
 
 ⚠️ Para testar localmente, pode ser necessário utilização do SAFE UPDATE, porém **não é necessário adicionar a instrução do SAFE UPDATE no arquivo `desafio22.sql` junto a query**, pois o próprio avaliador irá ajustar isso.
 
-  ---
+---
 
 23 - Atualize os dados da coluna `discount` da tabela `order_details` para 30, onde o valor na coluna `unit_price` seja menor que 10.0000.
 
 - ✨ Dica: Não é necessário utilizar o SAFE UPDATE em sua query.
 
-  ---
+  ***
 
 24 - Atualize os dados da coluna `discount` da tabela `order_details` para 45, onde o valor na coluna `unit_price` seja maior que 10.0000 e o id seja um número entre 30 e 40.
 
 - ✨ Dica: Não é necessário utilizar o SAFE UPDATE em sua query.
 
-  ---
+  ***
 
 25 - Delete todos os dados em que a `unit_price` da tabela `order_details` seja menor que 10.0000.
 
-  ---
+---
 
 26 - Delete todos os dados em que a `unit_price` da tabela `order_details` seja maior que 10.0000.
 
-  ---
+---
 
 27 - Delete todos os dados da tabela `order_details`.
 
